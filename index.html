@@ -37,7 +37,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <button class="navbar-toggle ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
+            <a class="navbar-brand" href="#"><img src="img/img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id = "nucampNavbar">
@@ -61,31 +62,41 @@
                 <h2 class="text-sm-end">Discover & Review</h2>
             </div>
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                <div class="d-flex">
+                    <img class="me-3 img-thumbnail" src="img/img/breadcrumb-trail-thumb.jpg" alt="breadcrumb trail">
+                    <div class="align-self-center">
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                    </div>
+                </div>
             </div>                   
         </section>
 
 		<!-- feature section -->
         <section class="row row-content align-items-center">
-            <div class = "col-sm-4 col-med-3">
+            <div class = "col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-            </div>           
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake
+                        is a favorite place for fly fishers.
+                    </p>
+                </div>
+            </div>              
         </section>
 
 		<!-- partner section -->
         <section class="row row-content align-items-center">
-            <div class = "col-sm-4 col-med-3 order-sm-last">
-                <h2 class="text-sm-end">Our Community Partners</h2>
-            </div>
             <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-            </div>           
+                <div class="d-flex">
+                    <img class="me-3 img-thumbnail" src="img/img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <div class="align-self-center">
+                        <h3>Bootstrap Outfitters</h3>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    </div>
+                </div>
+            </div>        
         </section>
 
 	</main>
