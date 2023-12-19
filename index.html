@@ -48,10 +48,56 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa-solid fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+                <span class="navbar-text ms-auto">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav> 
 
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- main section -->
     <main class = "container">
@@ -74,14 +120,22 @@
 
 		<!-- feature section -->
         <section class="row row-content align-items-center">
-            <div class = "col-sm-4 col-md-3">
+            <div class = "col-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake
-                        is a favorite place for fly fishers.
-                    </p>
+                    <div class="d-flex">
+                        <!--I definitely used too many divs here... not sure how to clean up the code-->
+                        <div class="align-self-center">
+                            <div class="align-self-center"><h3>React Lake Campground</h3></div>
+                            <div class="align-content-below">
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake
+                                is a favorite place for fly fishers.
+                                </p>
+                            </div>
+                        </div>
+                        <img class="me-3 img-thumbnail" src="img/img/react-lake-thumb.jpg" alt="react lake">
+                    </div>        
                 </div>
             </div>              
         </section>
@@ -98,6 +152,48 @@
                 </div>
             </div>        
         </section>
+
+
+        <!--New section for reservations-->
+        <section class="row row-content align-items-center">
+            <div class="col-12 mx-auto">
+                <div class="card">
+                    <h3 class="card-header" style="background-color: teal; color: white;">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-12 col-xs-6">
+                                    <label for="NumberOfCampers" class="form-label">Number of Campers:</label>
+                                    <select name="NumberOfCampers" id="NumberOfCampers" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+        
+                            <div class="row mb-3">
+                                <div class="col-12 col-xs-6">
+                                    <label for="date" class="form-label">Date:</label>
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="YYYY-MM-DD">
+                                </div>
+                            </div>
+        
+                            <div class="row mb-3">
+                                <div class="col-12 col-xs-6">
+                                    <input type="submit" class="btn btn-primary" value="Search">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
 
 	</main>
 
