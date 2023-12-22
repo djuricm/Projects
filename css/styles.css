@@ -12,7 +12,7 @@ h2 {
 
 header {
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #d3ca48, #414247, #16b947);
     color: white;
 }
 
@@ -32,7 +32,7 @@ footer {
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #b38bbd;
 }
 
 
@@ -40,9 +40,11 @@ footer {
     background-color: #d3d3d3;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+
+body {
+    background-image: url(https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.carousel {
-    border: solid #5637DD;
-}
+
